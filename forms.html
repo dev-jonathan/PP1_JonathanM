@@ -2,119 +2,158 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleForms.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Formulário</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleForms.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Formulário</title>
+  <script src="script.js"></script>
 </head>
 
 <body>
 
-    <nav class="navegacao">
-        <ul>
-            <li><img class="logo" src="logo.png" alt="logo"></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="forms.html">Contato</a></li>
-            <li><a href="ongInfo.html">Sobre</a></li>
-            <li><a href="loc.html"><i id="icon" class="material-icons">pin_drop</i></a></li>
-        </ul>
-    </nav>
+  <nav class="navegacao">
+    <ul>
+      <li><img class="logo" src="imgs/logo.png" alt="logo"></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="forms.html" style="color: grey;">Contato</a></li>
+      <li><a href="ongInfo.html">Sobre</a></li>
+      <li><a href="loc.html"><i id="icon" class="material-icons">pin_drop</i></a></li>
+    </ul>
+  </nav>
 
-  
-    
-    <div class="container">
-        <div class="form">
-            <form action="agradecimento.html" method="get" id="form">
-                <div>
-                    <div class="inputs" id="textos">
-                        <h1>Formulário</h1>
-    
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome:" id="nome" required>
-                    </div>
-    
-                    <div class="inputs" id="textos">
-    
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="nome@gmail.com" required>
-    
-                    </div>
-    
-                    <div class="inputs" id="textos">
-                        <label for="tel">Telefone:</label>
-                        <input type="tel" name="telefone" id="tel">
-                    </div>
-    
-                    <div class="inputs">
-                        <h4> Você ja fez uma arvore genealógica?</h4>
-                        <div class="input-radio">
-                            <input type="radio" id="fiz" value="Sim">
-                            <label for="fiz">Sim, ja fiz</label>
-                        </div>
-                        <div class="input-radio">
-                            <input type="radio" id="nao" value="Não">
-                            <label for="nao">Nao, nunca fiz</label>
-                        </div>
-                        <div class="input-radio">
-                            <input type="radio" name="tentei" value="Tentei" id="tentei">
-                            <label for="tentei">Ja tentei, mas nao ate o fim</label>
-                        </div>
-                    </div>
-    
-                    <div class="inputs">
-                        <h4>Ja utilizou algum desse sites?</h4>
-    
-                        <div class="input-radio">
-                            <input type="checkbox" name="Heritage" id="MyHeritage">
-                            <label for="MyHeritage">MyHeritage</label>
-                        </div>
-                        <div class="input-radio">
-                            <input type="checkbox" name="FamilySearch" id="FamilySearch">
-                            <label for="FamilySearch">FamilySearch</label>
-                        </div>
-                        <div class="input-radio">
-                            <input type="checkbox" name="Ancestry" id="Ancestry">
-                            <label for="Ancestry">Ancestry</label>
-                        </div>
-                        <div class="input-radio">
-                            <input type="checkbox" id="ArquivoNacional" name="ArquivoNacional">
-                            <label for="ArquivoNacional">Arquivo Nacional</label>
-                        </div>
-                        <div class="input-radio">
-                            <input type="checkbox" name="Nunca utilizei" id="Nuncautilizei" checked>
-                            <label for="Nuncautilizei">Nunca utilizei</label>
-                        </div>
-    
-                    </div>
-    
-                    <div class="botoes">
-                        <input type="submit" value="ENVIAR">
-                    </div>
-    
-                </div>
-            </form>
+  <div class="container">
+    <div class="form">
+      <form action="" method="get" id="formCadastro" name="formCadastro">
+        <div id="div-form1">
+          <div class="inputs" id="textos">
+            <h1>Formulário</h1>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome Sobrenome">
+            <p class="span"></p>
+          </div>
+
+          <div class="inputs" id="textos">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="nome@gmail.com">
+            <p class="span"></p>
+          </div>
+
+          <div class="inputs" id="textos">
+            <label for="telefone">Telefone:</label>
+            <input type="telefone" name="telefone" id="telefone" placeholder="(34)9000-0000">
+            <p class="span"></p>
+          </div>
+
+          <div class="inputs">
+            <h4> Você já fez uma arvore genealógica?</h4>
+
+            <div class="input-radio">
+              <input type="radio" name="radio-pergunta" id="fiz" value="Sim">
+              <label for="fiz">Sim, já fiz</label>
+            </div>
+            <div class="input-radio">
+              <input type="radio" name="radio-pergunta" id="nao" value="Não">
+              <label for="nao">Não, nunca fiz</label>
+            </div>
+            <div class="input-radio">
+              <input type="radio" name="radio-pergunta" value="Tentei" id="tentei">
+              <label for="tentei">Já tentei, mas não até o fim</label>
+            </div>
+            <p class="span"></p>
+          </div>
+
+          <div class="inputs">
+            <h4>Já utilizou algum desse sites?</h4>
+
+            <div class="input-radio">
+              <input type="checkbox" value="Heritage" id="MyHeritage" name="checkBoxSites">
+              <label for="MyHeritage">MyHeritage</label>
+            </div>
+            <div class="input-radio">
+              <input type="checkbox" value="FamilySearch" id="FamilySearch" name="checkBoxSites">
+              <label for="FamilySearch">FamilySearch</label>
+            </div>
+            <div class="input-radio">
+              <input type="checkbox" value="Ancestry" id="Ancestry" name="checkBoxSites">
+              <label for="Ancestry">Ancestry</label>
+            </div>
+            <div class="input-radio">
+              <input type="checkbox" id="ArquivoNacional" value="Arquivo Nacional" name="checkBoxSites">
+              <label for="ArquivoNacional">Arquivo Nacional</label>
+            </div>
+            <div class="input-radio">
+              <input type="checkbox" value="Nunca utilizei" id="Nunca utilizei" name="checkBoxSites">
+              <label for="Nuncautilizei">Nunca utilizei</label>
+              <p class="span"></p>
+            </div>
+          </div>
+
+          <div class="botoes">
+            <input type="submit" value="VERIFICAR" id="verifica">
+          </div>
+          <div class="botoes">
+            <input type="reset" value="LIMPAR">
+          </div>
+
         </div>
-        
-        <div id="div-svg">
-            <img id="svg" src="undraw.svg" alt="">
+
+        <div id="resposta-user">
+          <h2>Deseja Enviar Assim?</h2>
+
+          <h4>Nome:</h4>
+          <p></p>
+          <h4>Email:</h4>
+          <p></p>
+          <h4>Telefone:</h4>
+          <p></p>
+          <h4>Já fez uma arvore genealogica?</h4>
+          <p></p>
+
+          <div class="respCheckBox">
+            <h4>Sites Utilizados:</h4>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+          </div>
+          <div class="botoes">
+            <input type="submit" value="ENVIAR" id="enviar">
+          </div>
+          <div class="botoes">
+            <input type="submit" value="ALTERAR" id="alterar">
+          </div>
+          <div class="botoes">
+            <input type="reset" value="LIMPAR" id="limpar">
+          </div>
         </div>
+
+      </form>
+
     </div>
 
+    <div id="div-svg">
+      <img id="svg" src="imgs/undraw.svg" alt="">
+    </div>
+  </div>
 
-    
-    <footer>
-        <img class="logo" src="logo.png" alt="logo">
-        <div>
-            <div>
-                <a href="https://github.com/jonathan-brasil"><i class="material-icons">contact_support</i></a>
-                <a href="https://github.com/jonathan-brasil"><i class="material-icons">call</i></a>
-                <a href="https://github.com/jonathan-brasil"><i class="material-icons">mail</i></a>
-            </div>
-            <a class="linkPerfil" href="https://github.com/jonathan-brasil">&#169; Jonathan Martins - 2022</a>
-        </div>
-    </footer>
+
+
+  <footer>
+    <img class="logo" src="imgs/logo.png" alt="logo">
+    <div>
+      <div>
+        <a href=""><i class="material-icons">contact_support</i></a>
+        <a href=""><i class="material-icons">call</i></a>
+        <a href=""><i class="material-icons">mail</i></a>
+      </div>
+      <a class="linkPerfil" href="">&#169; Jonathan Martins - 2022</a>
+    </div>
+  </footer>
 
 </body>
 
